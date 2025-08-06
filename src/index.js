@@ -28,9 +28,7 @@ const chart = lightningChart({
 chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.DateTime, (tickStrategy) => tickStrategy.setDateOrigin(dateOrigin))
 
 // Set chart title and modify the padding of the chart.
-chart.setTitle('Realtime OHLC and line').setPadding({
-    right: 42,
-})
+chart.setTitle('Realtime OHLC and line')
 // Modify AutoCursor to only show TickMarker and Gridline over X Axis.
 chart.setCursor((cursor) => {
     cursor.setTickMarkerYVisible(false)
@@ -40,7 +38,7 @@ chart.setCursor((cursor) => {
 // Configure X-axis to be progressive.
 chart
     .getDefaultAxisX()
-    .setScrollStrategy(AxisScrollStrategies.progressive)
+    .setScrollStrategy(AxisScrollStrategies.scrolling)
     // View fits 5 minutes.
     .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - fiveMinutesInMs, stopAxisAfter: false }))
 
@@ -60,10 +58,10 @@ const ohlcSeriesAutoPacking = chart
         { seriesConstructor: OHLCSeriesTypes.AutomaticPacking },
     )
     // Set packing resolution to 100 ms so we can zoom to full resolution.
-    .setPackingResolution(100)
+    // .setPackingResolution(100)
 
 const add = (points) => {
-    lineSeries.add(points)
+    lineSeries.appendJSON(points)
     // With automatic packing, the add method accepts data points that use the {x, y} format (for example, {x: time, y: measurement}).
     // OHLC Series can automatically pack these raw measurements into OHLC data.
     ohlcSeriesAutoPacking.add(points)
