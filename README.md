@@ -56,7 +56,7 @@ Supplied points are packed by columns, within which the Y-values are mapped to o
 
 [//]: # 'IMPORTANT: The assets will not show before README.md is built - relative path is different!'
 
-![](./assets/ohlcPacking.png)
+![OHLC Packing](./assets/ohlcPacking.png)
 
 
 ## API Links
