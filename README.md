@@ -89,9 +89,9 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2026. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/ChartXY.html
-[Axis tick strategies]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/variables/AxisTickStrategies.html
-[Freeform line series]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/PointLineAreaSeries.html
-[OHLC series]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/ChartXY.html#addOHLCSeries
-[OHLC series types]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/types/OHLCSeriesTypes.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html
+[Axis tick strategies]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/variables/AxisTickStrategies.html
+[Freeform line series]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/PointLineAreaSeries.html
+[OHLC series]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html#addOHLCSeries
+[OHLC series types]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/types/OHLCSeriesTypes.html
 
